@@ -1,9 +1,9 @@
 {
-  "name": "samanyuneelson/infin-whatsapp-extension",
-  "version": "1.0.0",
+  "name": "@samanyuneelson/infin-whatsapp-extension",
+  "version": "1.0.1",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/samanyuneelson"
-  },  
+  },
   "description": "whatsapp button for websites",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +27,11 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
+    "@mui/styled-engine-sc": "^5.11.11",
+    "styled-components": "^5.3.9"
+  }
 }
