@@ -43,7 +43,7 @@ interface WhatsappProps {
   spacing?: string;
 }
 
-const WhatsappIcon = ({
+const WhatsappButton = ({
   whatsappNumber,
   position = "right",
   spacing = "40px"
@@ -62,4 +62,4 @@ const WhatsappIcon = ({
   );
 };
 
-export default WhatsappIcon;
+export default WhatsappButton;

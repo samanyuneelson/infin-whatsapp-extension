@@ -3,6 +3,8 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
 import packageJson from "./package.json" assert { type: "json" };
+import PeerDepsExternalPlugin from "rollup-plugin-peer-deps-external";
+import terser from "@rollup/plugin-terser";
 
 export default [
   {
@@ -20,8 +22,10 @@ export default [
       },
     ],
     plugins: [
+      PeerDepsExternalPlugin(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
+      terser(),
     ],
   },
   {

@@ -1,1 +1,1 @@
-export { default as Button } from "./Button";
+export { default as WhatsappButton } from "./WhatsappButton";

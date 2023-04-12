@@ -1,37 +1,45 @@
 {
   "name": "@samanyuneelson/infin-whatsapp-extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/samanyuneelson"
   },
   "description": "whatsapp button for websites",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest"
   },
   "author": "Samanyu Neelson",
   "license": "ISC",
   "devDependencies": {
+    "@emotion/styled": "^11.10.6",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.0",
     "@types/react": "^18.0.28",
-    "react": "^18.2.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "rollup": "^3.19.1",
     "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "ts-jest": "^29.1.0",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
+    "@mui/styled-engine-sc": "^5.11.11",
+    "styled-components": "^5.3.9"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "dependencies": {
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.11.16",
-    "@mui/styled-engine-sc": "^5.11.11",
-    "styled-components": "^5.3.9"
-  }
+  "types": "dist/index.d.ts"
 }
